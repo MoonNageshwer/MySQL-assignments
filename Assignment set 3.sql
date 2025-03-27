@@ -17,8 +17,9 @@ select sum(amount) from payments where customerNumber = 103;
 -- Q4.How many entries belong to the customerno 141?
 select count(customerNumber) from payments where customerNumber = 141;
 
--- Q5.Find the minimum and maximum amounts in the dataset.movies
-select * from movies;
+-- Q5.Find the minimum and maximum amounts in the dataset.payments
+select * from payments;
+select min(amount),max(amount) from payments;
 
 #Use movies table
 -- Q6.What are the titles of all movies in the "Animations" category?
