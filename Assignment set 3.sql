@@ -1,4 +1,4 @@
-#use customers table 
+use assignment;
 -- Q1. List customers who do not have a sales representative assigned.
 
 select * from customers;
