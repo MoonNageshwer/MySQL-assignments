@@ -52,5 +52,6 @@ select * from employees;
 select employeeNumber,firstName,jobTitle from employees order by jobTitle;
  
  -- 13. Get the month-wise total sales for the year 2004.
- 
+ select month(paymentDate),sum(amount) from payments where year(paymentDate) = 2004 group by month(paymentDate) order by month(paymentDate) ;
 -- 14. Display the orders placed on weekends (Saturday & Sunday).
+SELECT * FROM orders WHERE DAYOFWEEK(orderDate) IN (1, 7); 
